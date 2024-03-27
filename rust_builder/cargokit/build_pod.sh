@@ -49,6 +49,8 @@ do
   fi
 done
 
+chmod a+x "$BASEDIR/run_build_tool.sh"
+
 "$BASEDIR/run_build_tool.sh" build-pod "$@"
 
 # Make a symlink from built framework to phony file, which will be used as input to
